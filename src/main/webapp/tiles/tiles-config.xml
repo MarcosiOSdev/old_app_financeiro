@@ -1,0 +1,104 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<definition name="main" template="/view/templates/main.jsp">
+		<put-attribute name="titles" value="Financeiro"/>
+		<put-attribute name="header" value="/view/templates/headerPublic.jsp"/>
+		<put-attribute name="footer" value="/view/templates/footer.jsp"/>
+	</definition>
+	
+    <definition name="login"  extends="main" >
+    	<put-attribute name="bodymain" value="/view/index.jsp"/>
+    </definition>
+    
+    <definition name="createUser"  extends="main" >
+    	<put-attribute name="bodymain" value="/view/createUser.jsp"/>
+    </definition>
+    
+     <definition name="successUser"  extends="main" >
+    	<put-attribute name="bodymain" value="/view/successUser.jsp"/>
+    </definition>
+   	
+   	<definition name="checkEmail"  extends="main" >
+    	<put-attribute name="bodymain" value="/view/checkEmail.jsp"/>
+    </definition>
+    
+    <definition name="thanksEmail"  extends="main" >
+    	<put-attribute name="bodymain" value="/view/thanksEmail.jsp"/>
+    </definition>
+ 
+    
+    <definition name="user/welcomeUser" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/welcomeUser.jsp"/>
+    </definition>
+    
+    <definition name="contactMe" extends="main">
+    	<put-attribute name="bodymain" value="/view/contactMe.jsp" />
+    </definition>
+    
+    <definition name="contactMeSuccess" extends="main">
+    	<put-attribute name="bodymain" value="/view/contactMeSuccess.jsp" />
+    </definition>
+       
+    <definition name="user/home" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/home.jsp"/>
+    </definition>
+    
+    <definition name="user/perfil" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp" />
+    	<put-attribute name="bodymain" value="/view/protected/user/perfil.jsp"/>
+    </definition>
+    
+    <definition name="user/createAccount" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/createAccount.jsp"/>
+    </definition>
+    
+    <definition name="user/accounts" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/accounts.jsp"/>
+    </definition>
+    
+    <definition name="user/accounts/update/account" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/updateAccount.jsp"/>
+    </definition>
+    
+    <definition name="user/createRelease" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/createRelease.jsp"/>
+    </definition>
+    
+    
+    <definition name="user/releases/limit5" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/releasesLimit5.jsp"/>
+    </definition>
+    
+    <definition name="user/releases/maximum" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/maximumRelease.jsp"/>
+    </definition>
+    
+    <definition name="user/releases/minimum" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/minimumRelease.jsp"/>
+    </definition>
+    
+    
+    <definition name="user/releases/dateForDate" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/releaseForDate.jsp"/>
+    </definition>
+    
+    <definition name="update" extends="main">
+    	<put-attribute name="header" value="/view/templates/header.jsp"/>
+    	<put-attribute name="bodymain" value="/view/protected/user/releaseForDate.jsp"/>
+    </definition>
+    
+    
+</tiles-definitions>
